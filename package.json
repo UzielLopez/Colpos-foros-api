@@ -1,0 +1,27 @@
+{
+  "name": "Colpos-foros-api",
+  "version": "1.0.0",
+  "description": "REST API para la página de foros de discusión del proyecto de Colpos para el bloque TC2005B",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UzielLopez/Colpos-foros-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UzielLopez/Colpos-foros-api/issues"
+  },
+  "homepage": "https://github.com/UzielLopez/Colpos-foros-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^5.12.3"
+  }
+}
