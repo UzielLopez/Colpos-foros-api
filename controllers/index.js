@@ -24,8 +24,12 @@ const createPublicacion = async (req, res) => {
 }
 
 const getAllPublicacion = async (req, res) => {
+  var cat = req.params.cat
   try {
     const publicacion = await models.Publicacion.findAll({
+      where: {
+        idCategoriaPublicacion: cat
+      },
       include: []
     })
     return res.status(200).json({ publicacion })
@@ -40,8 +44,12 @@ const createRespuesta = async (req, res) => {
 }
 
 const getAllRespuesta = async (req, res) => {
+  var cat = req.params.cat
   try {
     const respuesta = await models.respuesta.findAll({
+      where: {
+        idPublicacion: cat
+      },
       include: []
     })
     return res.status(200).json({ respuesta })

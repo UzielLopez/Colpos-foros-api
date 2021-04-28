@@ -13,12 +13,12 @@ router.get('/categoria', controllers.getAllCategorias);
 //Publicaciones
 
 router.post('/publicacion', controllers.createPublicacion);
-router.get('/publicacion', controllers.getAllPublicacion);
+router.get('/publicacion/:cat', controllers.getAllPublicacion);
 
 //Respuestas
 
 router.post('/respuesta', controllers.createRespuesta);
-router.get('/respuesta', controllers.getAllRespuesta);
+router.get('/respuesta/:cat', controllers.getAllRespuesta);
 
 
 module.exports = router;
