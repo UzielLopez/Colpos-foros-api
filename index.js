@@ -1,3 +1,4 @@
+// Index principal
 require('dotenv').config();
 
 const server = require('./server');
